@@ -11,7 +11,6 @@
 }
 body {
     background: #181c1e;
-    /* overflow-y: hidden; */
 }
 .heading {
     color: #444;
@@ -25,7 +24,7 @@ body {
 }
 .container {
     display: flex;
-    gap: 130px;
+    gap: 110px;
     align-items: center;
     margin-left: 100px;
 }
@@ -34,14 +33,14 @@ body {
     margin-top: -75px;
 }
 .container .main-video video {
-    width: 72%;
+    width: 73%;
     border-radius: 5px;
 }
 .container .video-list {
     background: #0f0f0f77;
     border-radius: 5px;
     height: 400px;
-    width: 1450px;
+    width: 1550px;
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
@@ -71,20 +70,14 @@ body {
     padding: 10px;
     cursor: pointer;
 }
-.container .video-list .vid:hover {
+.video-list .vid:hover {
     background: #1e2322;
 }
-.container .video-list .vid.active {
+.video-list .vid.active {
     background: #2c2c2cfb;
 
 }
-.container .video-list .vid.active .title{
-    color:#f1f1f1;
-}
-.container .video-list .vid .title{
-    color:  #f1f1f18b;
-    font-size: 15px;
-}
+
 
 
 @media screen and (max-width: 992px) {
@@ -129,19 +122,20 @@ body {
     }
     
     .container .video-list .vid {
-        margin: 5px;
+        margin: 10px;
         margin-top: 70px;
     }
     .container .video-list .vid video {
-        width: 180px;
+        width: 200px;
     }
     .container .video-list .vid {
         padding: 100px;
     }
-    .container .video-list .vid:hover {
+    .video-list .vid:hover {
         background: none;
     }
-    .container .video-list .vid.active {
-        display: none;
+    .video-list .vid.active {
+        background: none;
+
     }
 }
