@@ -6,27 +6,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-transform: capitalize;
     font-family: "poppins" , sans-serif;
     font-weight: normal;
 }
 body {
     background: #181c1e;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 .heading {
     color: #444;
     padding: 10px;
     font-size: 1.8rem;
     margin-top: 26px;
-    margin-left: 7%;
+    margin-left: 100px;
 }
 .bolded { 
     font-weight: bold; 
 }
 .container {
     display: flex;
-    grid-template-columns: 2fr 1fr;
     gap: 130px;
     align-items: center;
     margin-left: 100px;
@@ -43,7 +41,7 @@ body {
     background: #0f0f0f77;
     border-radius: 5px;
     height: 400px;
-    max-width: 700px;
+    width: 1450px;
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
@@ -88,15 +86,62 @@ body {
     font-size: 15px;
 }
 
-@media (max-width:991px) {
-    .container {
-        grid-template-columns: 1.5fr 1fr;
-        padding: 10px;
-    }
-}
 
-@media (max-width:768px) {
+@media screen and (max-width: 992px) {
+    .heading {
+        font-size: 5rem;
+        margin-left: 3rem;
+        margin-top: 26px;
+    }
     .container {
-        grid-template-columns: 1fr;
+        flex-direction: column-reverse;
+        padding: 1px;
+        border-radius: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+        gap: 10px;
+    }
+    .main-video video {
+        width: 100%;
+        border-radius: 5px;
+        margin-top: 6rem;
+        margin-left: 50px;
+    }
+    .container .main-video video {
+        width: 122%;
+        border-radius: 5px;
+    }
+    .container .vid {
+        width: 130px;
+        border-radius: 10px;
+    }
+
+    .container .video-list {
+        background: #9e9d9d00;
+        height: 400px;
+        width: 1300px;
+        flex-direction: column;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin-left: 300px;
+        padding-left: 0px;
+        padding-right: 100px;
+    }
+    
+    .container .video-list .vid {
+        margin: 5px;
+        margin-top: 70px;
+    }
+    .container .video-list .vid video {
+        width: 180px;
+    }
+    .container .video-list .vid {
+        padding: 100px;
+    }
+    .container .video-list .vid:hover {
+        background: none;
+    }
+    .container .video-list .vid.active {
+        background: none;
     }
 }
