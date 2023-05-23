@@ -90,7 +90,7 @@ body {
 @media screen and (max-width: 992px) {
     .heading {
         font-size: 5rem;
-        margin-left: 3rem;
+        margin-left: 6rem;
         margin-top: 26px;
     }
     .container {
@@ -105,10 +105,10 @@ body {
         width: 100%;
         border-radius: 5px;
         margin-top: 6rem;
-        margin-left: 50px;
+        margin-left: 100px;
     }
     .container .main-video video {
-        width: 122%;
+        width: 112%;
         border-radius: 5px;
     }
     .container .vid {
@@ -142,6 +142,6 @@ body {
         background: none;
     }
     .container .video-list .vid.active {
-        background: none;
+        display: none;
     }
 }
